@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Prantl's Bakery</title>
+
+  <!-- Link to styles.css -->
+  <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+
+  <!-- Link to jQuery library -->
+  <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+
+  <!-- Link to css and jQuery of materializecss.com-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+  <!-- Link to my javascript -->
+  <script type="text/javascript" src="js/scripts.js"></script>
+    
+  <!--Let browser know website is optimized for mobile, code from materializecss.com-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Import highchart module -->
+  <script type="text/javascript" src="js/highcharts.js"></script>
+  <script type="text/javascript" src="js/modules/exporting.js"></script>
+
+  <!-- First interactive graph -->
+  <script type="text/javascript">
+  $(function () {
+      $('#container-graph1').highcharts({
+          title: {
+            text: "Popular time for Prantl Shadyside",
+              
+              x: -20 //center
+          },
+          subtitle: {
+              
+              x: -20
+          },
+          xAxis: {
+            title:{
+              text: "Time"
+            },
+              categories: ['7am', '8am', '9am', '10am', '11am', '12pm',
+                  '1pm', '2pm', '3pm', '4pm', '5pm']
+          },
+          yAxis: {
+              title: {
+                  text: 'Num Of Customers'
+              },
+              plotLines: [{
+                  value: 0,
+                  width: 1,
+                  color: '#808080'
+              }]
+          },
+          tooltip: {
+              valueSuffix: 'Num Of Customers (on average)'
+          },
+          legend: {
+              layout: 'vertical',
+              align: 'right',
+              verticalAlign: 'middle',
+              borderWidth: 0
+          },
+          series: [{
+              name: 'Shadyside',
+              data: [10, 8, 24, 5, 7, 32, 16, 18, 27, 39, 32]
+          }]
+      });
+  });
+  </script>
+
+  <!--Second interactive graph -->
+  <script type="text/javascript">
+  $(function () {
+      $('#container-graph2').highcharts({
+          title: {
+            text: "Popular time for Prantl Downtown",
+              
+              x: -20 //center
+          },
+          subtitle: {
+              
+              x: -20
+          },
+          xAxis: {
+            title:{
+              text: "Time"
+            },
+              categories: ['7am', '8am', '9am', '10am', '11am', '12pm',
+                  '1pm', '2pm', '3pm', '4pm', '5pm']
+          },
+          yAxis: {
+              title: {
+                  text: 'Num Of Customers'
+              },
+              plotLines: [{
+                  value: 0,
+                  width: 1,
+                  color: '#808080'
+              }]
+          },
+          tooltip: {
+              valueSuffix: 'Num Of Customers (on average)'
+          },
+          legend: {
+              layout: 'vertical',
+              align: 'right',
+              verticalAlign: 'middle',
+              borderWidth: 0
+          },
+          series: [{
+              name: 'Downtown',
+              data: [24, 12, 16, 8, 11, 19, 15, 18, 13, 21, 35]
+          }]
+      });
+  });
+  </script>     
+</head>
+
+<body>
+  <nav id="navigation">
+    <div class="nav-wrapper">
+      <a href="index.html" class="brand-logo"><img src="images/logo2.png"></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="info.html">Store Info</a></li>
+        <li><a href="holiday.html">Holiday</a></li>
+        <li><a href="celebration.html">Celebration</a></li>
+        <li><a href="wedding.html">Wedding</a></li>
+        <li><a href="stats.html">Statistics</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="info.html">Store Info</a></li>
+        <li><a href="holiday.html">Holiday</a></li>
+        <li><a href="celebration.html">Celebration</a></li>
+        <li><a href="wedding.html">Wedding</a></li>
+        <li><a href="stats.html">Statistics</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+    
+  <!-- Google map location of two sites -->
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.069153808366!2d-79.93507868530796!3d40.451606361442856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f211aed70341%3A0x10db72884d553d04!2sPrantl&#39;s+Bakery!5e0!3m2!1sen!2sus!4v1458670299113" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> <!-- Shady Side -->
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9944.240787906569!2d-80.006612329346!3d40.44154833055759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f15696baf219%3A0x9e8bccef10009784!2sPrantl&#39;s+Bakery!5e0!3m2!1sen!2sus!4v1458670334942" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> <!-- Downtown -->
+
+  <!-- Use of html table -->
+  <table>
+    <thead>
+      <tr>
+        <th data-field="id">Shadyside</th>
+        <th data-field="name">Downtown</th>      
+      </tr>
+        </thead>
+
+    <tbody>
+        <tr>
+          <td>5525 Walnut Street</td>
+          <td>438 Market Street</td>
+        </tr>
+        <tr>
+          <td>412-621-2092</td>
+          <td>412-471-6861</td>
+        </tr>
+        <tr> <!-- Click and send mail to two stores directly -->
+          <td><a href="mailto:info@prantlsbakery.com" target="_top">info@prantlsbakery.com</a></td>
+          <td><a href="mailto:infoms@prantlsbakery.com" target="_top">infoms@prantlsbakery.com</a></td>
+        </tr>
+        <tr>
+          <td>Monday: 9am-4pm</td>
+          <td>Monday-Friday: 7am-6pm</td>
+        </tr>
+        <tr>
+          <td>Tuesday-Saturday: 7:30am-6pm</td>
+          <td>Saturday: 9am-4pm</td>
+        </tr>
+        <tr>
+          <td>Sunday: 9am-4pm</td>
+          <td>Sunday: 10am-3pm</td>
+        </tr>
+      </tbody>
+    </table>
+
+  <!-- Two interactive graphs -->
+  <div id="container-graph1"></div>
+  <div id="container-graph2"></div>
+
+  <footer class="page-footer" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Huffington Post</h5>
+          <p class="grey-text text-lighten-4">No cake made in any of the five boroughs of New York holds a candle to Prantl&#39;s amazing burnt almond torte. It is possibly the BEST cake America has to offer.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Check us out</h5>
+          <ul>
+            <li><a href="https://www.facebook.com/PrantlsBakery"><img src="images/facebook.png"></a></li>
+            <li><a href="https://twitter.com/prantlsbakery"><img src="images/twitter.png"></a></li>
+            <li> <a href="https://www.instagram.com/prantls_bakery/"><img src="images/instagram.png"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        2016 Copyright Text
+      <a class="grey-text text-lighten-4 right" href="http://www.prantlsbakery.com/">More Links</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
+
+
+
+
+
+

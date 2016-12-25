@@ -1,0 +1,49 @@
+#navigation{
+    background-color: #00a665;
+}
+
+#footer{
+    background-color: #00a665;
+}
+
+#container{
+    background-color: #00a665;
+}
+
+html { 
+    overflow-y: scroll; 
+}
+
+p{
+    padding: 30px;
+}
+
+body{
+    line-height: 1.7em;
+}
+
+#description{
+    float: left;
+}
+
+ul{
+    padding: 30px;
+}
+
+#cakevideo{
+    width: 100%;
+    padding: 10px 30px;
+}
+
+#video{
+    text-align: center;
+}
+
+#store, #wedding, #birthday{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+
